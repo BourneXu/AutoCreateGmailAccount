@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-08-28 13:21:24
+# @Last Modified time: 2018-08-28 19:50:22
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -77,7 +77,7 @@ class CreateGmail:
             UserInfo['lastname'] = LastName.values[:num]
         UserInfo.index = range(num)
         UserInfo.dropna()
-        UserInfo['username'] = UserInfo['firstname'] + UserInfo['lastname'] + '1018'
+        UserInfo['username'] = UserInfo['firstname'] + UserInfo['lastname'] + '31578'
         UserInfo['pswd'] = 'super' + UserInfo['firstname'] + '233'
         return UserInfo
 
