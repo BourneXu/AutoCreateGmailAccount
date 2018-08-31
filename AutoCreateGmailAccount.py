@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-08-30 09:01:40
+# @Last Modified time: 2018-08-31 15:27:59
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -28,10 +28,11 @@ class CreateGmail:
     
     def CreateAccount(self):
         self._browser.find_element_by_css_selector(r'input[id="firstName"]').send_keys(self._firstname)
+        time.sleep(1)
         self._browser.find_element_by_css_selector(r'input[id="lastName"]').send_keys(self._lastname)
-        time.sleep(1 + 3 * random.random())
+        time.sleep(1)
         self._browser.find_element_by_css_selector(r'input[id="username"]').send_keys(self._username)
-        time.sleep(1 + 3 * random.random())
+        time.sleep(1)
         self._browser.find_element_by_css_selector(r'input[name="Passwd"]').send_keys(self._pswd)
         time.sleep(1 + 3 * random.random())
         self._browser.find_element_by_css_selector(r'input[name="ConfirmPasswd"]').send_keys(self._pswd)
@@ -48,9 +49,11 @@ class CreateGmail:
             time.sleep(1 + 3 * random.random())
             recovery_email = 'xuchao0245@yahoo.com'
             self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(recovery_email)
+            time.sleep(1)
             self._browser.find_element_by_css_selector(r'input[id="day"]').send_keys(random.randint(1, 28))
+            time.sleep(1)
             self._browser.find_element_by_css_selector(r'input[id="year"]').send_keys(random.randint(1990, 2000))
-            time.sleep(1 + 3 * random.random())
+            time.sleep(1)
             self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
             time.sleep(1 + 3 * random.random())
             self._browser.find_element_by_css_selector(r'div[id="personalDetailsNext"]').click()
