@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-08-28 19:50:22
+# @Last Modified time: 2018-08-30 09:01:40
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -16,6 +16,7 @@ class CreateGmail:
         self._firstname = firstname
         self._lastname = lastname
         self._username = username
+        assert username.lower() == (firstname + lastname + '31578').lower(), 'Wrong Username'
         self._pswd = pswd
         self._Donefile = open('./data/CreatedAccounts.csv', 'a')
         self.Initialize()
@@ -30,6 +31,7 @@ class CreateGmail:
         self._browser.find_element_by_css_selector(r'input[id="lastName"]').send_keys(self._lastname)
         time.sleep(1 + 3 * random.random())
         self._browser.find_element_by_css_selector(r'input[id="username"]').send_keys(self._username)
+        time.sleep(1 + 3 * random.random())
         self._browser.find_element_by_css_selector(r'input[name="Passwd"]').send_keys(self._pswd)
         time.sleep(1 + 3 * random.random())
         self._browser.find_element_by_css_selector(r'input[name="ConfirmPasswd"]').send_keys(self._pswd)
@@ -43,10 +45,14 @@ class CreateGmail:
             self._browser.quit()
             raise ValueError('IP Mac Limited. Stop the Script...')
         else:
+            time.sleep(1 + 3 * random.random())
+            recovery_email = 'xuchao0245@yahoo.com'
+            self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(recovery_email)
             self._browser.find_element_by_css_selector(r'input[id="day"]').send_keys(random.randint(1, 28))
             self._browser.find_element_by_css_selector(r'input[id="year"]').send_keys(random.randint(1990, 2000))
             time.sleep(1 + 3 * random.random())
             self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
+            time.sleep(1 + 3 * random.random())
             self._browser.find_element_by_css_selector(r'div[id="personalDetailsNext"]').click()
             self._browser.implicitly_wait(10)
             time.sleep(1)
