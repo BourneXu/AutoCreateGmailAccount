@@ -13,5 +13,3 @@
 
 
 One person or laptop could create about 2 new accounts during about 2-3days.
-
-Thanks.
