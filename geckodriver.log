@@ -975,3 +975,123 @@ See /usr/include/servers/bootstrap_defs.h for the error codes.
 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
 [GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1535744473590	geckodriver	INFO	geckodriver 0.18.0
+1535744473636	geckodriver	INFO	Listening on 127.0.0.1:52030
+1535744474667	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-08-31 15:41:15.771 plugin-container[2893:105115] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa337, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-08-31 15:41:15.947 plugin-container[2894:105182] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa137, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535744476079	Marionette	INFO	Listening on port 52041
+1535744476129	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-08-31 15:41:16.732 plugin-container[2895:105326] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9b37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535744486982	geckodriver	INFO	geckodriver 0.18.0
+1535744487028	geckodriver	INFO	Listening on 127.0.0.1:52227
+1535744488059	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-08-31 15:41:29.164 plugin-container[3005:106495] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa333, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-08-31 15:41:29.341 plugin-container[3006:106532] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9f2b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535744489493	Marionette	INFO	Listening on port 52241
+1535744489512	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-08-31 15:41:30.196 plugin-container[3007:106653] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2D00CD,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1535744498920	geckodriver	INFO	geckodriver 0.18.0
+1535744498965	geckodriver	INFO	Listening on 127.0.0.1:52409
+1535744499996	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-08-31 15:41:41.119 plugin-container[3115:107261] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa337, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-08-31 15:41:41.300 plugin-container[3116:107300] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa133, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535744501506	Marionette	INFO	Listening on port 52420
+1535744501551	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-08-31 15:41:42.092 plugin-container[3117:107439] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x983b, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[Child 3116, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 3116, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Child 3116, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x49000E,name=PHttpChannel::Msg_DeletingChannel) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2D00CD,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1535744512753	geckodriver	INFO	geckodriver 0.18.0
+1535744512793	geckodriver	INFO	Listening on 127.0.0.1:52592
+1535744513832	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-08-31 15:41:54.932 plugin-container[3225:108078] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa437, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-08-31 15:41:55.123 plugin-container[3226:108109] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa133, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535744515351	Marionette	INFO	Listening on port 52603
+1535744515398	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-08-31 15:41:55.925 plugin-container[3227:108258] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9a37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535903473001	geckodriver	INFO	geckodriver 0.18.0
+1535903473054	geckodriver	INFO	Listening on 127.0.0.1:57846
+1535903474082	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-09-02 11:51:15.480 plugin-container[6686:2092682] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9c37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-02 11:51:15.695 plugin-container[6687:2092805] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa333, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535903476094	Marionette	INFO	Listening on port 57857
+1535903476189	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-02 11:51:16.438 plugin-container[6688:2093232] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9a37, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x2D00CD,name=PContent::Msg_GraphicsError) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1535903504514	geckodriver	INFO	geckodriver 0.18.0
+1535903504563	geckodriver	INFO	Listening on 127.0.0.1:58158
+1535903505581	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-09-02 11:51:46.788 plugin-container[6700:2105059] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa433, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-02 11:51:46.924 plugin-container[6701:2105148] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa133, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535903507100	Marionette	INFO	Listening on port 58169
+1535903507148	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-02 11:51:47.716 plugin-container[6702:2105594] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9937, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6700, Chrome_ChildThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+1535903982440	geckodriver	INFO	geckodriver 0.18.0
+1535903982491	geckodriver	INFO	Listening on 127.0.0.1:58796
+1535903983514	geckodriver::marionette	INFO	Starting browser /Applications/Firefox.app/Contents/MacOS/firefox-bin with args ["-marionette"]
+2018-09-02 11:59:44.742 plugin-container[8527:2283433] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa333, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+2018-09-02 11:59:44.879 plugin-container[8528:2283544] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0xa137, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+1535903985130	Marionette	INFO	Listening on port 58809
+1535903985197	Marionette	WARN	TLS certificate errors will be ignored for this session
+2018-09-02 11:59:45.648 plugin-container[8529:2283969] *** CFMessagePort: bootstrap_register(): failed 1100 (0x44c) 'Permission denied', port = 0x9a33, name = 'com.apple.tsm.portname'
+See /usr/include/servers/bootstrap_defs.h for the error codes.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[proxychains] DLL init: proxychains-ng 4.12
+1535904017957	geckodriver	INFO	geckodriver 0.18.0
+1535904018003	geckodriver	INFO	Listening on 127.0.0.1:59047
+[proxychains] DLL init: proxychains-ng 4.12
+1535904020932	geckodriver	INFO	geckodriver 0.18.0
+1535904020978	geckodriver	INFO	Listening on 127.0.0.1:59054
+[proxychains] DLL init: proxychains-ng 4.12
+1535904042714	geckodriver	INFO	geckodriver 0.18.0
+1535904042761	geckodriver	INFO	Listening on 127.0.0.1:59172
+[proxychains] DLL init: proxychains-ng 4.12
+1535904048044	geckodriver	INFO	geckodriver 0.18.0
+1535904048090	geckodriver	INFO	Listening on 127.0.0.1:59179
