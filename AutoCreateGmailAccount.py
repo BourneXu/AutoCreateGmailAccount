@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-08-31 15:27:59
+# @Last Modified time: 2018-09-02 16:54:07
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -38,7 +38,6 @@ class CreateGmail:
         self._browser.find_element_by_css_selector(r'input[name="ConfirmPasswd"]').send_keys(self._pswd)
         self._browser.find_element_by_css_selector(r'div[id="accountDetailsNext"]').click()
         self._browser.implicitly_wait(10)
-        time.sleep(1 + random.random())
 
         try:
             self._browser.find_element_by_css_selector('#month > option:nth-child(%d)'%random.randint(1, 13)).click()
@@ -71,7 +70,7 @@ class CreateGmail:
 
             self._Donefile.write(self._username + ',' + self._pswd + '\n')
             print(self._username + ': Success')
-            self._browser.quit()
+            # self._browser.quit()
 
     @staticmethod
     def GetUserInfo(firstnamefile, lastnamefile):
@@ -98,6 +97,7 @@ class CreateGmail:
         Open sharedlink and then, plz manually finish Install. 
         '''
         self._browser.get(sharedlink)
+        time.sleep(10)
 
 
 
@@ -111,7 +111,7 @@ if __name__ == '__main__':
         UserInfoSeries = UserInfoDF.loc[num]
         CGM = CreateGmail(*UserInfoSeries)
         CGM.CreateAccount()
-        # CGM.RunAppsScript(SharedScript)
+        CGM.RunAppsScript(SharedScript)
 
     
 
