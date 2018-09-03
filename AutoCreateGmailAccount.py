@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-09-02 16:54:07
+# @Last Modified time: 2018-09-03 17:26:27
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -70,7 +70,7 @@ class CreateGmail:
 
             self._Donefile.write(self._username + ',' + self._pswd + '\n')
             print(self._username + ': Success')
-            # self._browser.quit()
+            self._browser.quit()
 
     @staticmethod
     def GetUserInfo(firstnamefile, lastnamefile):
@@ -111,7 +111,7 @@ if __name__ == '__main__':
         UserInfoSeries = UserInfoDF.loc[num]
         CGM = CreateGmail(*UserInfoSeries)
         CGM.CreateAccount()
-        CGM.RunAppsScript(SharedScript)
+        # CGM.RunAppsScript(SharedScript)
 
     
 
