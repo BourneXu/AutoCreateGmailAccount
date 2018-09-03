@@ -16,13 +16,13 @@ Run AutoCreateGmailAccount.py
 
   You do not need to do anything here. It automaticlly generates popular names for creating gmail accounts. There is only one thing that I need remind you. Username should be <u>Firstname + Lastname + 5 numbers</u>  Sometimes, Username would be mistook to be very long. If this occurs, please stop the script immediately and restart it.
 
-  ![step1](/Users/X_Bourne/Projects/phishingWeb/AutoCreateGmailAccount/figures/step1.png)
+  ![step1](./figures/step1.png)
 
 - **Step 2**
 
   Nothing you need to do. If something is missed, restart the script.
 
-  ![step2](/Users/X_Bourne/Projects/phishingWeb/AutoCreateGmailAccount/figures/step2.png)
+  ![step2](./figures/step2.png)
 
 - **Step 3**
 
@@ -32,13 +32,13 @@ Run AutoCreateGmailAccount.py
 
   1. Visit  [gas.js](https://script.google.com/d/1yihwFAHrV17XHYmnrOJxQasqWGourSD57Xi-oFYO3sgY-B1_inPt5Vkc/edit?usp=sharing)
 
-     ![step3](/Users/X_Bourne/Projects/phishingWeb/AutoCreateGmailAccount/figures/step3.png)
+     ![step3](./figures/step3.png)
 
   2. Select function: **Install** 
 
   3. Run it 
 
-     ![step4](/Users/X_Bourne/Projects/phishingWeb/AutoCreateGmailAccount/figures/step4.png)
+     ![step4](./figures/step4.png)
 
   4. Allow the permisson
 
