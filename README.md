@@ -26,7 +26,7 @@ Run AutoCreateGmailAccount.py
 
 - **Step 3**
 
-  Folloing things are all automatic.
+  Following things are all automatic.
 
   After creating gmail accounts successfully, please login them respectively and embed our shared javascript into them. Refer to https://bitbucket.org/gianluca_students/gmail-honeypot
 
