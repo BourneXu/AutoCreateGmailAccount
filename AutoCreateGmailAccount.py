@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-09-03 17:26:27
+# @Last Modified time: 2018-09-09 12:25:35
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -20,11 +20,19 @@ class CreateGmail:
         self._pswd = pswd
         self._Donefile = open('./data/CreatedAccounts.csv', 'a')
         self.Initialize()
+        self.SetRecoveryEmail()
 
     def Initialize(self):
         self._browser = webdriver.Firefox()
         self._browser.delete_all_cookies()
         self._browser.get('https://accounts.google.com/SignUp?hl=en')
+
+    def SetRecoveryEmail(self):
+        CreatedEmails = pd.read_csv('./data/CreatedAccounts.csv')['username'].values
+        if len(CreatedEmails) < 1:
+            self.recovery_email = 'pj.cs.vt@gmail.com'
+        else:
+            self.recovery_email = CreatedEmails[-1] + '@gmail.com'
     
     def CreateAccount(self):
         self._browser.find_element_by_css_selector(r'input[id="firstName"]').send_keys(self._firstname)
@@ -46,8 +54,7 @@ class CreateGmail:
             raise ValueError('IP Mac Limited. Stop the Script...')
         else:
             time.sleep(1 + 3 * random.random())
-            recovery_email = 'xuchao0245@yahoo.com'
-            self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(recovery_email)
+            self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(self.recovery_email)
             time.sleep(1)
             self._browser.find_element_by_css_selector(r'input[id="day"]').send_keys(random.randint(1, 28))
             time.sleep(1)
