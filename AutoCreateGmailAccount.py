@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-09-09 12:25:35
+# @Last Modified time: 2018-09-11 09:35:32
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -20,7 +20,6 @@ class CreateGmail:
         self._pswd = pswd
         self._Donefile = open('./data/CreatedAccounts.csv', 'a')
         self.Initialize()
-        self.SetRecoveryEmail()
 
     def Initialize(self):
         self._browser = webdriver.Firefox()
@@ -35,6 +34,7 @@ class CreateGmail:
             self.recovery_email = CreatedEmails[-1] + '@gmail.com'
     
     def CreateAccount(self):
+        self.SetRecoveryEmail()
         self._browser.find_element_by_css_selector(r'input[id="firstName"]').send_keys(self._firstname)
         time.sleep(1)
         self._browser.find_element_by_css_selector(r'input[id="lastName"]').send_keys(self._lastname)
