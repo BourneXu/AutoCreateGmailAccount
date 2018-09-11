@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-09-11 09:35:32
+# @Last Modified time: 2018-09-11 14:02:59
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -16,7 +16,6 @@ class CreateGmail:
         self._firstname = firstname
         self._lastname = lastname
         self._username = username
-        assert username.lower() == (firstname + lastname + '31578').lower(), 'Wrong Username'
         self._pswd = pswd
         self._Donefile = open('./data/CreatedAccounts.csv', 'a')
         self.Initialize()
@@ -92,7 +91,10 @@ class CreateGmail:
             UserInfo['lastname'] = LastName.values[:num]
         UserInfo.index = range(num)
         UserInfo.dropna()
-        UserInfo['username'] = UserInfo['firstname'] + UserInfo['lastname'] + '31578'
+        suffix = ''
+        for i in range(6):
+            suffix += str(random.randint(0, 9))
+        UserInfo['username'] = UserInfo['firstname'] + UserInfo['lastname'] + suffix
         UserInfo['pswd'] = 'super' + UserInfo['firstname'] + '233'
         return UserInfo
 
