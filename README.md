@@ -30,7 +30,7 @@ Run AutoCreateGmailAccount.py
 
   After creating gmail accounts successfully, please login them respectively and embed our shared javascript into them. Refer to https://bitbucket.org/gianluca_students/gmail-honeypot
 
-  1. Visit  [gas.js](https://script.google.com/d/1yihwFAHrV17XHYmnrOJxQasqWGourSD57Xi-oFYO3sgY-B1_inPt5Vkc/edit?usp=sharing)
+  1. Visit  [gas.js](https://script.google.com/d/1yihwFAHrV17XHYmnrOJxQasqWGourSD57Xi-oFYO3sgY-B1_inPt5Vkc/edit?usp=sharing) or [track.js](https://script.google.com/d/19cYjAJs5H9Z-WpCeNa6NF4E2usEXoyafAxzZ9IJ30rtMYsqId7fUSWSp/edit?usp=sharing) or [track2.js](https://script.google.com/d/1xQLzecX7dJ5PnnpOsJRDLkeBTWbj2fx7HytKPPqNZgJxJB-98qupMCTQ/edit?usp=sharing)
 
      ![step3](./figures/step3.png)
 
