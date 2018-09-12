@@ -2,7 +2,7 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-# @Last Modified time: 2018-09-11 14:02:59
+# @Last Modified time: 2018-10-08 18:54:08
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
@@ -33,7 +33,7 @@ class CreateGmail:
             self.recovery_email = CreatedEmails[-1] + '@gmail.com'
     
     def CreateAccount(self):
-        self.SetRecoveryEmail()
+        # self.SetRecoveryEmail()
         self._browser.find_element_by_css_selector(r'input[id="firstName"]').send_keys(self._firstname)
         time.sleep(1)
         self._browser.find_element_by_css_selector(r'input[id="lastName"]').send_keys(self._lastname)
@@ -53,13 +53,21 @@ class CreateGmail:
             raise ValueError('IP Mac Limited. Stop the Script...')
         else:
             time.sleep(1 + 3 * random.random())
-            self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(self.recovery_email)
-            time.sleep(1)
+            # self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(self.recovery_email)
+            # time.sleep(1)
             self._browser.find_element_by_css_selector(r'input[id="day"]').send_keys(random.randint(1, 28))
             time.sleep(1)
             self._browser.find_element_by_css_selector(r'input[id="year"]').send_keys(random.randint(1990, 2000))
             time.sleep(1)
-            self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
+            try:
+                self._browser.find_element_by_css_selector('#gender').click()
+            except:
+                pass
+            try:
+                self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
+            except:
+                time.sleep(0.5)
+                self._browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div[2]/form/div[2]/div/div[4]/div[1]/div/div[2]/select/option[%d]'%random.randint(1, 4)).click()
             time.sleep(1 + 3 * random.random())
             self._browser.find_element_by_css_selector(r'div[id="personalDetailsNext"]').click()
             self._browser.implicitly_wait(10)
