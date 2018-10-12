@@ -2,7 +2,11 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
+<<<<<<< HEAD
 # @Last Modified time: 2018-10-08 18:54:08
+=======
+# @Last Modified time: 2018-09-12 11:09:59
+>>>>>>> 49f1519fa4b17be8f1acda0a16ed05d5a6b2e670
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
