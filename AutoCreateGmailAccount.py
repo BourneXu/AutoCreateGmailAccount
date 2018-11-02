@@ -2,16 +2,14 @@
 # @Author: Chao
 # @Date:   2018-08-23 22:57:28
 # @Last Modified by:   Chao
-<<<<<<< HEAD
-# @Last Modified time: 2018-10-08 18:54:08
-=======
-# @Last Modified time: 2018-09-12 11:09:59
->>>>>>> 49f1519fa4b17be8f1acda0a16ed05d5a6b2e670
+# @Last Modified time: 2018-11-02 10:04:50
+
 from selenium.webdriver.common.action_chains import ActionChains
 from selenium import webdriver
 import pandas as pd
 import random
 import time
+import sys
 
 
 class CreateGmail:
@@ -21,7 +19,7 @@ class CreateGmail:
         self._lastname = lastname
         self._username = username
         self._pswd = pswd
-        self._Donefile = open('./data/CreatedAccounts.csv', 'a')
+        self._Donefile = open('/Users/X_Bourne/GoogleDrive/ecrime_phishing/Chaoxu/Data/GmailAccounts/GmailAccounts.csv', 'a')
         self.Initialize()
 
     def Initialize(self):
@@ -55,6 +53,7 @@ class CreateGmail:
         except:
             self._browser.quit()
             raise ValueError('IP Mac Limited. Stop the Script...')
+            sys.exit(0)
         else:
             time.sleep(1 + 3 * random.random())
             # self._browser.find_element_by_css_selector(r'div.fQxwff:nth-child(2) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > input:nth-child(1)').send_keys(self.recovery_email)
@@ -66,9 +65,17 @@ class CreateGmail:
             try:
                 self._browser.find_element_by_css_selector('#gender').click()
             except:
+                print("Cannot locate Gender Blockm Please manually click it. Sleep 1 min...")
+                time.sleep(60)
                 pass
             try:
-                self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
+                time.sleep(0.5)
+                try:
+                    self._browser.find_element_by_css_selector('#gender > option:nth-child(%d)'%random.randint(1, 4)).click()
+                except:
+                    self._browser.quit()
+                    sys.exit(1)
+                    self._browser.find_elements_by_xpath('').click()
             except:
                 time.sleep(0.5)
                 self._browser.find_element_by_xpath('/html/body/div[1]/div/div[2]/div[1]/div[2]/form/div[2]/div/div[4]/div[1]/div/div[2]/select/option[%d]'%random.randint(1, 4)).click()
